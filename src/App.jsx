@@ -4,6 +4,7 @@ import RouteProtegee from './components/RouteProtegee.jsx';
 import Accueil from './pages/Accueil.jsx'; 
 import Catalogue from './pages/Catalogue.jsx'; 
 import FicheLivre from './pages/FicheLivre.jsx'; 
+import MaListe from './pages/Maliste.jsx';
 import Connexion from './pages/Connexion.jsx'; 
 import Compte from './pages/Compte.jsx'; 
 import PageIntrouvable from './pages/PageIntrouvable.jsx';
@@ -16,6 +17,7 @@ export default function App() {
       <Route index element={<Accueil />} /> 
       <Route path="catalogue" element={<Catalogue />} /> 
       <Route path="livres/:id" element={<FicheLivre />} /> 
+      <Route path="ma-liste" element={<MaListe />} />
       <Route path="connexion" element={<Connexion />} /> 
       <Route
         path="compte" 
